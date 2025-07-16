@@ -7,6 +7,10 @@
   <title>Score-Board</title>
 </head>
 <body>
+   <video autoplay muted loop id="bg-video">
+    <source src="videos/istockphoto-1675797229-640_adpp_is.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+   </video> 
   <div class="container">
     <h1>Game-Day Match!</h1>
     <div class="main-content">
@@ -16,19 +20,27 @@
         <div class="team">
           <h2>Home</h2>
           <p class="home-score">0</p>
+          <div class="button-group">
           <button id="home-btn1">+1</button>
           <button id="home-btn2">+2</button>
           <button id="home-btn3">+3</button>
+        </div>
         </div>
 
         <div class="team">
           <h2>Guest</h2>
           <p class="guest-score">0</p>
+          <div class="button-group">
           <button id="guest-btn1">+1</button>
           <button id="guest-btn2">+2</button>
           <button id="guest-btn3">+3</button>
+          </div>
         </div>
+        
       </div>
+      <p class="update">
+            Leading Team: 
+        </p>
     </div>
   </div>
 </body>
