@@ -1,6 +1,23 @@
+@font-face {
+    font-family: 'CursedTimer';
+    src: url(./fonts/CursedTimerUlil-Aznm.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+#bg-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
 body{
     text-align: center;
     background-color: rgb(215, 215, 243);
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .container{
@@ -29,25 +46,45 @@ body{
 
 .scores {
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5px;
 }
 
 .team {
+   flex: 1;
+   display: flex;
    flex-direction: column;
+   align-items: center;
+}
+.buttom-group{
+    display: flex;
+    
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .team button {
-    font-family: cursed timer ULiL;
+    font-family: 'CursedTimer', monospace;
+    background-color: #1B244A;
+    border: 1px, solid, #9AABD8;
+    border-radius: 2px;
+    color: #9AABD8;
+    cursor: pointer;
+    padding: 6px;
+    margin: 2px;
+
 }
 
 .home-score, .guest-score {
     background-color: #080001;
-    width: 90px;
-    height: 50px;
-    margin-top: 25px;
+    color: red;
+    width: 70px;
+    height: 70px;
+    box-sizing: border-box;
     bottom: 25px;
-    padding: 12px;
-    margin: 15px auto;
+    padding: 10px;
+    margin: 15px;
+    font-family: 'CursedTimer', monospace;
+    font-size: larger;
 
 }
