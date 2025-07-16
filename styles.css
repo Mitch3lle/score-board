@@ -88,3 +88,16 @@ body{
     font-size: larger;
 
 }
+#reset-scores{
+    background-color: #1B244A;
+    color: #9AABD8;
+    border: 1px, solid, #9AABD8 ;
+    font-family: 'CursedTimer', monospace;
+    padding: 10px;
+    cursor: pointer;
+    margin: 8px;
+
+}
+#reset-scores:hover {
+    background-color: #6d91fb;
+}
