@@ -8,7 +8,7 @@ body{
     border-radius: 10px;
     padding: 20px;
     color: #ffff;
-    display: flex;
+    
     margin: 50px auto;
     width: 500px;
     height: 400px;
@@ -18,4 +18,36 @@ body{
     font-style: bold;
     
     
+}
+.main-content {
+    
+}
+.scores h1 {
+    text-align: center;
+    width: 100%;
+}
+
+.scores {
+    display:flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.team {
+   flex-direction: column;
+}
+
+.team button {
+    font-family: cursed timer ULiL;
+}
+
+.home-score, .guest-score {
+    background-color: #080001;
+    width: 90px;
+    height: 50px;
+    margin-top: 25px;
+    bottom: 25px;
+    padding: 12px;
+    margin: 15px auto;
+
 }
