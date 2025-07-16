@@ -1,16 +1,25 @@
-//let homeBtn1 = document.getElementById("home-btn1");
-//console.log(homeBtn1);
-//let homeScore = document.getElementsByClassName("home-score");
-
-
-let homeBtn1 = document.getElementById("home-btn1");
-let homeScoreEl = document.querySelector(".home-score");
 let homeScore = 0;
+let guestScore = 0;
 
+let homeScoreEl = document.querySelector(".home-score");
+let guestScoreEl = document.querySelector(".guest-score");
 
-function addnum1(){
-    homeScore += 1;
+// Reusable function
+function updateScore(team, points) {
+  if (team === "home") {
+    homeScore += points;
     homeScoreEl.innerText = homeScore;
+  } else if (team === "guest") {
+    guestScore += points;
+    guestScoreEl.innerText = guestScore;
+  }
 }
 
-homeBtn1.addEventListener("click", addnum1);
+// Attach events dynamically
+document.getElementById("home-btn1").addEventListener("click", () => updateScore("home", 1));
+document.getElementById("home-btn2").addEventListener("click", () => updateScore("home", 2));
+document.getElementById("home-btn3").addEventListener("click", () => updateScore("home", 3));
+
+document.getElementById("guest-btn1").addEventListener("click", () => updateScore("guest", 1));
+document.getElementById("guest-btn2").addEventListener("click", () => updateScore("guest", 2));
+document.getElementById("guest-btn3").addEventListener("click", () => updateScore("guest", 3));
