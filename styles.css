@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+    background-color: rgb(215, 215, 243);
+}
+
+.container{
+    background-color: #1B244A;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffff;
+    display: flex;
+    margin: 50px auto;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+    font-family: Verdana,'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-style: bold;
+    
+    
+}
